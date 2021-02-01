@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <title>image option!
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="Format.css">
+
+</head>
+
+<body id="pbody">
+	<p> Hello WORLD</p>
+	<a href="MainPage.html">
+		<p> Click here to go home</p>
+	</a>
+	
+<audio src="projectsmusic.mp3" id="song">
+</audio> 
+<script type="text/javascript">
+
+var song = document.getElementById('song')
+
+
+var toggle = function (a, b) {
+    var togg = false;
+    return function () {
+        return (togg = !togg) ? a() : b();
+    };
+};
+document.addEventListener('click', toggle(function () {
+    console.log("playing");
+    song.play();
+
+}, function () { 
+	console.log("pause");
+    song.pause();
+}));
+</script>
+
+</body>
+</html>

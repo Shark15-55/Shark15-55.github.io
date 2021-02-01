@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <title>About Me!
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="Format.css">
+
+</head>
+
+<body id="abody">
+	<div >
+		<section id="Sec1">
+			<a href="MainPage.html">
+					<p> Click here to go home</p>
+				</a>
+			 <center>
+			 	<h2> About </h2>
+			 	<h2> Cooper </h2>
+			 	<h2> Hartog</h2>
+			 </center>
+				
+		</section>
+	</div>
+
+	<div >
+		<section id="Sec2">
+			<p> Some images that relate to me</p>
+			<table>
+				<tr>
+					<td id="table1">
+						<img class="image-link2"  src="https://bit.ly/3nCVFl9">
+					</td>
+					<td id="table1">
+						<img class="image-link2"  src="https://images.unsplash.com/photo-1560275619-4662e36fa65c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1000&q=80">
+					</td>
+				</tr>
+				<tr>
+					<td id="table1">
+						<img class="image-link2"  src="Xeno.jpg">
+					</td>
+					<td id="table1">
+					<img class="image-link2"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAAMFBMVEV/f3/Dw8Oa2er///97e3uKior1/P2a2enCxMLGwsKa2eyW1+jB6fDB6PKwzdX///0q+XkyAAABzElEQVR4nO3cW1bbQBQAwckEooQ82P9ugzE2eoB6AVTBMdIxVyP1r2HGAAAAAAAA4Ot5IIxHwvhGkChJlCRKEiWJkkRJoiRRkihJlCRKEiWJkkRJoiRRkihJlCRKEiWJ0vhJGL8I4x9hzOXFvHy/vqyPX75uR/N6+na8Hbj/8vV4NTBXb83jwP3kMPB+8vHA/pq75ZbVj/3Trd7fPd1HCS4n44kwJkGiJFGSKEmUJEoSJYmSREmiJFGSKEmUJEoSJYmSREmiJFGSKEmUxm/C+EMYPwjjO0GiJFGSKEmUJEoSJYmSREmiJFGSKEmUJEoSJYmSREmiJFGSKI1ngkTJh0Rp/CX4wDr5r8bkL0OSREmiJFGSKEmUJEoSJYmSREmiJFGSKEmUJEoSJYmSREmiNBbCWaKnZbff4XLfL/HEamA7eDqzGVidnK5zstz5UtvB+fqonxqb5ebt5XCRy/aQ87ZH5PuNzMP0/p6vU/N22cP025qfJrrttLmfnrt72kzfH+Kjm13d0zHsPEwvNlBNtuFN9rtOEiWJkkRJoiRRkihJlCRKEiWJkkRJoiRRkihJlCRKEiWJkkRJoiRRkiiNR8J4IAwAAAAAAAC+nv/5J7mDVa927gAAAABJRU5ErkJggg==">
+					</td>
+				</tr>
+			</table>
+		</section>
+	</div>
+
+	<section id="Sec3">
+	<div class="text">
+        <center>
+            <h3>Cooper Hartog... <h3>
+            	<h1>The Most Amazing Wonderful Talented Humble Human To Ever Grace This Earth</h1>
+                <p>Insert about me here.  It is imporant that is mataining friends in anyway possible i don't really have a very specfic thing. I think it is risky to. the is a world out there and it is important. something that is important in regard to my social life at dalton is staying in touch with friends, saying happy birthday to friends these are just random words to test and copying and pasting from things I am currently reading</p>
+             
+        </center> 
+    </div>
+	</section>
+<audio src="aboutmemusic.mp3" id="song">
+</audio>
+<script type="text/javascript">
+
+var song = document.getElementById('song')
+
+var toggle = function (a, b) {
+    var togg = false;
+    return function () {
+        return (togg = !togg) ? a() : b();
+    };
+};
+document.addEventListener('click', toggle(function () {
+    console.log("playing");
+    song.play();
+
+}, function () { 
+	console.log("pause");
+    song.pause();
+}));
+</script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <title>image option!
+    </title>
+    <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie&amp;subset=latin' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="Format.css">
+
+</head>
+
+<body id="jbody">
+ <a href="MainPage.html">
+ 	<p>Click here to go home</p>
+ </a>
+ <div id="soundwords">Click Anywhere For Sound 🔊</div>
+ 	<center>
+		<h1>Welcome To My Journal</h1>
+	</center>
+  <center>
+  <table>
+  	<tr>
+  		<td class="postit"> 
+  			<center> 
+  				<p>January 31 2021 part 1</p>
+  				I know this is late to start this journal as I already have most of the basics of the website done but i am starting it now. I thought it would be cool to do post it notes in a sort of table. Today I did this and added music to all the pages so all you have to do it click to hear the song and click again to pause. This is a little much for one post-it so on to the next one. 
+  			</center>
+  		</td>
+  		<td class="postit2"> 
+  			<center> 
+  				<p>January 31 2021 part 2</p>
+  				The songs as a key: the main page is the SVU theme for my SVU themed website. the About me is daughter. The projects page is Silence and this page, my journal is cinderella. I need to also figre out how to limit the amount of space on top so I can write more on one post it. So for next time: limit top space on post-it , and make mock-up and maybe start the mock up for my first project. Shhhhhh... its an SVU chacter board. 
+  			</center>
+  		</td>
+  		<td class="postit4"> 
+  			<center> 
+  				<p>Febuary 1 2021</p>
+  				
+  			</center>
+  		</td>
+  		<td class="postit3"> 
+  			<center> 
+  				<p>Words </p>
+  				
+  			</center>
+  		</td>
+
+  	</tr>
+  	<tr>
+  		<td class="postit4"> 
+  			<center> 
+  				<p>Words</p>
+  			</center>
+  		</td>
+  		<td class="postit3"> 
+  			<center> 
+  				<p>Words</p>
+  				
+  			</center>
+  		</td>
+  		<td class="postit"> 
+  			<center> 
+  				<p>Words</p>
+  				
+  			</center>
+  		</td>
+  		<td class="postit2"> 
+  			<center> 
+  				<p>Words</p>
+  				
+  			</center>
+  		</td>
+
+  	</tr>
+  	<tr>
+  		<td class="postit"> 
+  			<center> 
+  				<p>Words</p>
+  				
+  			</center>
+  		</td>
+  		<td class="postit2"> 
+  			<center> 
+  				<p>Words</p>
+  				
+  			</center>
+  		</td>
+  		<td class="postit3"> 
+  			<center> 
+  				<p>Words</p>
+  				
+  			</center>
+  		</td>
+  		<td class="postit4"> 
+  			<center> 
+  				<p>Words</p>
+  				
+  			</center>
+  		</td>
+
+  	</tr>
+  </table>
+  </center>
+
+  <audio  loop src="journalmusic.mp3" id="song">
+</audio> 
+<script type="text/javascript">
+
+var song = document.getElementById('song')
+
+
+var toggle = function (a, b) {
+    var togg = false;
+    return function () {
+        return (togg = !togg) ? a() : b();
+    };
+};
+document.addEventListener('click', toggle(function () {
+    console.log("playing");
+    song.play();
+
+}, function () { 
+	console.log("pause");
+    song.pause();
+}));
+</script>
+
+</body>
+</html>
