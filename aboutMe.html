@@ -10,10 +10,11 @@
 </head>
 
 <body id="abody">
+
 	<div >
 		<section id="Sec1">
-			<a href="MainPage.html">
-					<p> Click here to go home</p>
+			 <a id="abouthome" href="index.html">
+					<p> Click here to go home 🏠</p>
 				</a>
 			 <center>
 			 	<h2> About </h2>
@@ -26,16 +27,9 @@
 
 	<div >
 		<section id="Sec2">
-			<p> Some images that relate to me</p>
+			<p> Some images that relate to me</p> 
+			<p>Click Anywhere For Sound 🔊</p>
 			<table>
-				<tr>
-					<td id="table1">
-						<img class="image-link2"  src="https://bit.ly/3nCVFl9">
-					</td>
-					<td id="table1">
-						<img class="image-link2"  src="https://images.unsplash.com/photo-1560275619-4662e36fa65c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1000&q=80">
-					</td>
-				</tr>
 				<tr>
 					<td id="table1">
 						<img class="image-link2"  src="Xeno.jpg">
@@ -44,6 +38,13 @@
 					<img class="image-link2"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAAMFBMVEV/f3/Dw8Oa2er///97e3uKior1/P2a2enCxMLGwsKa2eyW1+jB6fDB6PKwzdX///0q+XkyAAABzElEQVR4nO3cW1bbQBQAwckEooQ82P9ugzE2eoB6AVTBMdIxVyP1r2HGAAAAAAAA4Ot5IIxHwvhGkChJlCRKEiWJkkRJoiRRkihJlCRKEiWJkkRJoiRRkihJlCRKEiWJ0vhJGL8I4x9hzOXFvHy/vqyPX75uR/N6+na8Hbj/8vV4NTBXb83jwP3kMPB+8vHA/pq75ZbVj/3Trd7fPd1HCS4n44kwJkGiJFGSKEmUJEoSJYmSREmiJFGSKEmUJEoSJYmSREmiJFGSKEmUxm/C+EMYPwjjO0GiJFGSKEmUJEoSJYmSREmiJFGSKEmUJEoSJYmSREmiJFGSKI1ngkTJh0Rp/CX4wDr5r8bkL0OSREmiJFGSKEmUJEoSJYmSREmiJFGSKEmUJEoSJYmSREmiNBbCWaKnZbff4XLfL/HEamA7eDqzGVidnK5zstz5UtvB+fqonxqb5ebt5XCRy/aQ87ZH5PuNzMP0/p6vU/N22cP025qfJrrttLmfnrt72kzfH+Kjm13d0zHsPEwvNlBNtuFN9rtOEiWJkkRJoiRRkihJlCRKEiWJkkRJoiRRkihJlCRKEiWJkkRJoiRRkiiNR8J4IAwAAAAAAAC+nv/5J7mDVa927gAAAABJRU5ErkJggg==">
 					</td>
 				</tr>
+				<tr>
+					<td id="table1">
+						<img class="image-link2"  src="https://bit.ly/3nCVFl9">
+					</td>
+					<td id="table1">
+						<img class="image-link2"  src="https://images.unsplash.com/photo-1560275619-4662e36fa65c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1000&q=80">
+					</td>
 			</table>
 		</section>
 	</div>
@@ -53,16 +54,17 @@
         <center>
             <h3>Cooper Hartog... <h3>
             	<h1>The Most Amazing Wonderful Talented Humble Human To Ever Grace This Earth</h1>
-                <p>Insert about me here.  It is imporant that is mataining friends in anyway possible i don't really have a very specfic thing. I think it is risky to. the is a world out there and it is important. something that is important in regard to my social life at dalton is staying in touch with friends, saying happy birthday to friends these are just random words to test and copying and pasting from things I am currently reading</p>
+                <p id="aboutmefont">HI, My name is Cooper. I thought I would start this off with the photos you see before you scroll, the first one is my lizard watching tv on my computer. His name is Xenophilius Benson or Xeno for short. Xenophilius is from Harry Potter case I love the books (but hate the author) and Benson is from Law and Order SVU. If you coud not tell by the theme of the whole website I really like Law and Order SVU. The second flag is the Demiboy flag. I am a trans kid that I dentifyes as a demiboy, that falls under the non binary umbrella and basicly means that I am part a boy and part non-binary. The 3rd photo is my camp logo. My camp is a jewish science and technolgy camp, that is where I first learned how to code, although this is not what this website is for, i did make my first place I made a website. It is also a great place where I get to explore everything about me. I love camp, it is one of my favorite places on earth and I really miss it given that I am righting this in the time of Covid so I have not been to camp in almost two years. the Last photo is a Shark. I have loved sharks since I was two, they are my favorite thing in the whole world. I want to be a marine bioligist that specislizes in sharks when I am older. Some things about me that are not meantioned are at the time of righting this I am a 6 star jounior olypic archer with a compound bow. I also really like rubik's cubes, i just learned ow to slove a windwill cube. Lastly and why I am making this website, I am a 9th grader at the dalton school in CS1. </p>
              
         </center> 
     </div>
 	</section>
-<audio src="aboutmemusic.mp3" id="song">
+<audio  loop src="aboutmemusic.mp3" id="song">
 </audio>
 <script type="text/javascript">
 
 var song = document.getElementById('song')
+song.volume = 0.2;
 
 var toggle = function (a, b) {
     var togg = false;

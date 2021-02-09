@@ -2,7 +2,7 @@
 <html>
 <head>
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet">
-    <title>image option!
+    <title>My Journal!
     </title>
     <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie&amp;subset=latin' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="Format.css">
@@ -10,16 +10,19 @@
 </head>
 
 <body id="jbody">
- <a href="MainPage.html">
- 	<p>Click here to go home</p>
+
+ <a class="journallink"href="index.html">
+ 	Click here to go home 🏠
  </a>
+
  <div id="soundwords">Click Anywhere For Sound 🔊</div>
- 	<center>
+
+  <center>
 		<h1>Welcome To My Journal</h1>
 	</center>
   <center>
   <table>
-  	<tr>
+  	
   		<td class="postit"> 
   			<center> 
   				<p>January 31 2021 part 1</p>
@@ -34,25 +37,27 @@
   		</td>
   		<td class="postit4"> 
   			<center> 
-  				<p>Febuary 1 2021</p>
+  				<p>Febuary 1 2021 part 1</p>
+  				Today I tried to uplaod my website to github but it did not really work, I will trouble shoot during my lab on friday. Next up for monday I am creating a mock up for the Charecter chart and then I am going to try to code at least one chacter in and hopefully two to three. I finished the post-its, they look really cool. But that's it for today, not much more has happened. 
   				
   			</center>
   		</td>
   		<td class="postit3"> 
   			<center> 
-  				<p>Words </p>
+  				<p>Febuary 1st part 2</p>
+          This will be quick I just wanted to say that I made my projects page look good, now all I need to do it atuually make projects and put them in 
   				
   			</center>
   		</td>
 
-  	</tr>
-  	<tr>
-  		<td class="postit4"> 
+
+
+  		<td class="postit3"> 
   			<center> 
   				<p>Words</p>
   			</center>
   		</td>
-  		<td class="postit3"> 
+  		<td class="postit4"> 
   			<center> 
   				<p>Words</p>
   				
@@ -71,8 +76,8 @@
   			</center>
   		</td>
 
-  	</tr>
-  	<tr>
+
+
   		<td class="postit"> 
   			<center> 
   				<p>Words</p>
@@ -98,15 +103,16 @@
   			</center>
   		</td>
 
-  	</tr>
+
   </table>
   </center>
 
-  <audio  loop src="journalmusic.mp3" id="song">
+  <audio loop src="journalmusic.mp3" id="song">
 </audio> 
 <script type="text/javascript">
 
 var song = document.getElementById('song')
+song.volume = 0.2;
 
 
 var toggle = function (a, b) {
