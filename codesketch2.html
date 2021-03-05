@@ -3,13 +3,13 @@
 <head>
 	<title>Detective's Web</title>
 	<style type="text/css">
-	#benson {
+/*	#benson {
 		/*position: relative;
       top: 0px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      background-color: blue;*/
+      background-color: blue;
      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSnMcKWOifax4uxfscOr5ojxOWh2gr5F0K_Q&usqp=CAU); 
 		}
 
@@ -72,75 +72,36 @@
 		}
 
 		 #kat{
-		position: relative;
-      top: 0px;
-      background-repeat: no-repeat;
-
-      background-size: cover;
-      background-color: blue;
      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ezTkZpBJqoHsIBnXKmEK0msC-bYIozZMQg&usqp=CAU); 
-          width: 100px;
-      height: 100px;
-      border: 5px solid #23CDF3;
 		}
 
 		 #tucker{
-		position: relative;
-      top: 0px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      background-color: blue;
      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2JAc4iWa3FVJYFM6OVClBA4EZyE3TruYCsQ&usqp=CAU); 
-          width: 100px;
-      height: 100px;
-      border: 5px solid #23CDF3;
 		}
 		 #wdodds {
-		position: relative;
-      top: 0px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      background-color: blue;
      background-image: url(wdodds.jpeg); 
-        width: 100px;
-      height: 100px;
-      border: 5px solid #23CDF3;
 		}
+
 		 #carisi{
-		position: relative;
-      top: 0px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      background-color: blue;
      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpNqx81OwpzC99W9GxAiZm_rOiSevSIe70Uw&usqp=CAU); 
-     width: 100px;
-      height: 100px;
-      border: 5px solid #23CDF3;
 		}
 
 		 #garland{
-		position: relative;
-      top: 0px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      background-color: blue;
      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-nupEOPJU5SO5dI6MSQQ25NonvrKb-544kw&usqp=CAU); 
-         width: 100px;
-      height: 100px;
-      border: 5px solid #23CDF3;
 		}
 		*/
+
 
 #key {
 	text-align: center;
 	font-family: hevetica; 
-	width: 300px;
-	height: 300px;
-	background-color: blue;
+	width: 200px;
+	height: 360px;
+	position: fixed;
+	top: -5px;
+
+
+	background-color: white;
 }
 .photo{
 			position: relative;
@@ -152,15 +113,81 @@
       width: 100px;
       height: 100px;
       border: 5px solid #23CDF3;
+        z-index: 2;
+		}
+
+	.info {
+	  position: fixed;
+      top: 100px;
+      background-color: red;
+      width: 400px;
+      height: 300px;
+      left: 450px;
+      top: 190px;
+      z-index: 0;
+      text-align: center;
+      text-overflow: scroll;
+      opacity: 0;
+		}
+	
+		.start {
+	  position: fixed;
+      top: 100px;
+      background-color: black;
+      width: 400px;
+      height: 300px;
+      left: 450px;
+      top: 190px;
+      z-index: -3;
+      text-align: center;
+      text-overflow: scroll;
+      opacity: 1;
 		}
 
 	.photo:hover {
   border:7px solid #e3fc03;
 }
 
+#start2 {
+	color: blue;
+	line-height: 1;
+}
+
+.lines {
+	z-index: -2;
+	opacity: 0;
+	position: fixed;
+	left: 280px;
+	width: 700px;
+	height: 800px;
+}
+
 
 		h1 {
+			color: black;
+	
+		}
+		h3 {
+			color: blue;
+			font-size: 20px;
+		}
+		h2 {
+			color: green;
+			font-size: 20px;
+		}
+		h4 {
+			color: red;
+			font-size: 20px;
+		}
+
+		h6 {
 			color: orange;
+			font-size: 20px;
+		}
+
+		h5{
+			color: blue;
+			font-size: 40px;
 		}
 
 .main {
@@ -168,6 +195,11 @@
     border-radius: 50%;
     width: 600px;
     height: 600px;
+     z-index: 1;
+     position: fixed;
+     left: 335px;
+     top: 30px;
+     
 }
 
 .photo:nth-child(1) /*benson*/ {
@@ -251,12 +283,117 @@
 </head>
 <body id="body">
 
-	<center>
-		<!h1>The Detective's Conection Web<!/h1>
-	</center>
  <center>
- <div class="main">
+    <!-- do the connections like this but find a way to make backround transparent and size correctly because the sizing is weird but Other then that it should work well -->
+ 	<img class="lines" id="bensonconnect" src="bensonlines3.jpg">
 
+
+
+
+
+
+
+ 	<div class="start"> 
+ 		<h5>The SVU Detectives Coneection Web</h5>
+ 		<p id="start2">Click anybody to get started</p>
+ 	</div>
+ 		<div class="info" id="bensoninfo">
+ 			<h1>Captian Oliva Benson</h1>
+ 			<p>these are the words on the slide. Info about Benson. She is cool.</p>
+ 		</div>
+
+ 		<div class="info" id="rollinsinfo">
+ 			<h1>Detective Amanda Rollins</h1>
+ 			<p>these are the words on the slide. Info about rollins. She is also cool.</p>
+ 		</div>
+
+ 		<div class="info" id="finninfo">
+ 			<h1>Sargent Otafin Tutola</h1>
+ 			<p>these are the words on the slide. Info about Finn. He is also cool.</p>
+ 		</div>
+
+ 		<div class="info" id="stablerinfo">
+ 			<h1>Detective Elliot Stabler</h1>
+ 			<p>these are the words on the slide. Info about stabler. He is also really cool.</p>
+ 		</div>
+
+ 		<div class="info" id="munchinfo">
+ 			<h1>Sargent John Munch</h1>
+ 			<p>This is for munch he is cool. he has a fun uncle. so yeah for munch and his uncle. is also retired lucky him no more work. I hope he comes back soon</p>
+ 		</div>
+
+ 		<div class="info" id="crageninfo">
+ 			<h1>Captain Donald Cragen</h1>
+ 			<p>He is the og captain. the cool cat. the amazing dude.</p>
+ 		</div>
+
+ 		<div class="info" id="cassidyinfo">
+ 			<h1>Detective Brian Cassidy</h1>
+ 			<p>He dated oliva. during the the william lewis debocal.</p>
+ 		</div>
+
+ 		<div class="info" id="jeffriesinfo">
+ 			<h1>Detective Monique Jeffries</h1>
+ 			<p>Dated a perp and got kicked</p>
+ 		</div>
+
+ 		<div class="info" id="daniinfo">
+ 			<h1>Detective Dani Something</h1>
+ 			<p>this i  deti=ective, i need to find her last name. oh well</p>
+ 		</div>
+ 	   
+ 	   <div class="info" id="lakeinfo">
+ 			<h1>Detective Chester Lake</h1>
+ 			<p>ka detective my dad built this city and i am better then you for it.</p>
+ 		</div>
+
+ 		<div class="info" id="amaroinfo">
+ 			<h1>Detective Nick Amaro</h1>
+ 			<p>detective sore loser and moves away.</p>
+ 		</div>
+
+ 		<div class="info" id="murphyinfo">
+ 			<h1>Lieutenent Decland Murphy</h1>
+ 			<p>Father of rollins child.</p>
+ 		</div>
+
+ 		<div class="info" id="mdoddsinfo">
+ 			<h1>Sargent Mike Dodds</h1>
+ 			<p>Im alive but im dead.</p>
+ 		</div>
+
+ 		<div class="info" id="katinfo">
+ 			<h1>Detective Kat Tamin</h1>
+ 			<p>Im not a rookie so treating me like one</p>
+ 		</div>
+
+ 		<div class="info" id="tuckerinfo">
+ 			<h1>Captain Ed Tucker</h1>
+ 			<p>I'm the other dead one. But im in paris</p>
+ 		</div>
+
+ 		<div class="info" id="wdoddsinfo">
+ 			<h1>Cheif William Dodds</h1>
+ 			<p>State Island sucks. Not my memo</p>
+ 		</div>
+
+ 		<div class="info" id="carisiinfo">
+ 			<h1>Detective Dominick Carisi</h1>
+ 			<p>Im not police any more cause I be a kool kid</p>
+ 		</div>
+
+ 		<div class="info" id="garlandinfo">
+ 			<h1>Cheif Something Garland</h1>
+ 			<p>That is cheif to you</p>
+ 		</div>
+
+
+
+ 	
+ 	 
+ 	
+
+ <div class="main">
  	<img class="photo" id="benson" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSnMcKWOifax4uxfscOr5ojxOWh2gr5F0K_Q&usqp=CAU">
  	<img class="photo" id="rollins" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRta8hoW1ZE-8KQgRedlx0-oNGNjxUYUxcPKQ&usqp=CAU">
  	<img class="photo" id="fin" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyFrCDhir4jzMx4UhzJpMCTEgmfFk9oICl-Q&usqp=CAU">
@@ -266,53 +403,170 @@
  	<img class="photo" id="cassidy" src="cassidy.jpeg">
     <img class="photo" id="jeffries" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmWQzMwyJaQk1w5Iv9HZ5v9QL8l6VzZqnihw&usqp=CAU">
     <img class="photo"  id="dani" src="dani.jpeg">
+ 	<img class="photo" id="lake" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHPWZo1felS_2WwKpuqjfSu9K1BclRDE3f1g&usqp=CAU">
+ 	<img class="photo" id="amaro" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuy5bsyL1BPKbrhxJdr4d4uhgtXcvbi2mE4Q&usqp=CAU">
+ 	<img class="photo" id="murphy" src="murphy.jpeg">
+ 	<img class="photo" id="mdodds" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqfJb8olftW_Nf1f1tKxL_ieFKthB1wNqEQ&usqp=CAU">
+ 	<img class="photo" id="kat" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ezTkZpBJqoHsIBnXKmEK0msC-bYIozZMQg&usqp=CAU">
+ 	<img class="photo" id="tucker" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2JAc4iWa3FVJYFM6OVClBA4EZyE3TruYCsQ&usqp=CAU">
+ 	<img class="photo" id="wdodds" src="wdodds.jpeg">
+ 	<img class="photo" id="carisi" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpNqx81OwpzC99W9GxAiZm_rOiSevSIe70Uw&usqp=CAU">
+ 	<img class="photo" id="garland" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-nupEOPJU5SO5dI6MSQQ25NonvrKb-544kw&usqp=CAU">
  	
- 	<img class="photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHPWZo1felS_2WwKpuqjfSu9K1BclRDE3f1g&usqp=CAU">
- 	<img class="photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuy5bsyL1BPKbrhxJdr4d4uhgtXcvbi2mE4Q&usqp=CAU">
- 	<img class="photo" src="murphy.jpeg">
- 	<img class="photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqfJb8olftW_Nf1f1tKxL_ieFKthB1wNqEQ&usqp=CAU">
- 	<img class="photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ezTkZpBJqoHsIBnXKmEK0msC-bYIozZMQg&usqp=CAU">
- 	<img class="photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2JAc4iWa3FVJYFM6OVClBA4EZyE3TruYCsQ&usqp=CAU">
- 	<img class="photo" src="wdodds.jpeg">
- 	<img class="photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpNqx81OwpzC99W9GxAiZm_rOiSevSIe70Uw&usqp=CAU">
- 	<img class="photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-nupEOPJU5SO5dI6MSQQ25NonvrKb-544kw&usqp=CAU">
- 	<audio  loop src="rollinsmusic.mp3" id="rollinsmusic">
-</audio>
-
+ 	<audio loop src="olivasong.mp3" id="olivamusic">
+ 	<audio loop src="rollinsmusic.mp3" id="rollinsmusic">
+ 	<audio loop src="Icemusic.mp3" id="finmusic">
+ 	<audio loop src="stablersong.mp3" id="stablermusic">
+ 	<audio loop src="munchsong.mp3" id="munchmusic">
+ 	<audio loop src="cragensong.mp3" id="donaldmusic">
+ 	<audio loop src="cassidysong.mp3" id="cassidymusic">
+ 	<audio loop src="jeffriesmusic.mp3" id="jeffriesong">
+ 	<audio loop src="danissong.mp3" id="danisong">
+ 	<audio loop src="lake.mp3" id="lakemusic">
+ 	<audio loop src="nickmusic.mp3" id="amaromusic">
+ 	<audio loop src="murphyssong.mp3" id="murphymusic">
+ 	<audio loop src="mdoddssong.mp3" id="mdoddsmusic">
+ 	<audio loop src="katsong.mp3" id="taminmusic">
+ 	<audio loop src="tucker.mp3" id="tuckersong">
+ 	<audio loop src="wdodds.mp3" id="wdoddsmusic">
+ 	<audio loop src="carisi.mp3" id="carisimusic">
+ 	<audio loop src="garland.mp3" id="garlandmusic">
 </div>
 <script type="text/javascript">
+
+
+        var body = document.getElementById("body");
+        var starting = document.getElementById("start"); 
+
 		var benson1 = document.getElementById("benson");
+		var olivasongs = document.getElementById("olivamusic");
+		olivamusic.volume = 0.2;
+		var bensoninfo = document.getElementById("bensoninfo");
+		var bensonlines = document.getElementById("bensonconnect");
+		
+
+		//rollins
 		var rollins1 = document.getElementById("rollins");
 		var rollinssong = document.getElementById("rollinsmusic");
 		rollinssong.volume = 0.2;
+		var rollinsinfo = document.getElementById("rollinsinfo");
+
+//fin  
 		var fin1 = document.getElementById("fin");
+		var finsong = document.getElementById("finmusic");
+		finmusic.volume = 0.2;
+		var fininfo = document.getElementById("finninfo");
+
+
+
 		var stabler1 = document.getElementById("stabler");
+		var elliotsong = document.getElementById('stablermusic');
+		elliotsong.volume = 0.2;
+		var stablerinfo = document.getElementById("stablerinfo");
+		
+
 		var munch1 = document.getElementById("munch");
+		var johnsong = document.getElementById("munchmusic");
+		johnsong.volume = 0.2;
+		var munchinfo = document.getElementById("munchinfo");
+
+
 		var cragen1 = document.getElementById("cragen");
+		var cragensong = document.getElementById("donaldmusic");
+		cragensong.volume = 0.2;
+		var cargeninfo = document.getElementById("crageninfo");
+
+
 		var cassidy1 = document.getElementById("cassidy");
+		var briansong = document.getElementById("cassidymusic");
+		briansong.volume = 0.2;
+		var cassidyinfo = document.getElementById("cassidyinfo"); 
+
+
 		var jeffries1 = document.getElementById("jeffries");
+		var jeffriessong = document.getElementById("jeffriesong");
+		jeffriessong.volume = 0.2;
+		var jeffriesinfo = document.getElementById("jeffriesinfo");
+
+
 		var dani1 = document.getElementById("dani");
+		var danimusic = document.getElementById("danisong");
+		danimusic.volume = 0.2;
+		var daninfo = document.getElementById("daniinfo");
+		
+
+		var lake1 = document.getElementById("lake");
+		var lakesong = document.getElementById("lakemusic");
+		lakesong.volume = 0.2;
+		var lakeinfo = document.getElementById("lakeinfo");
+
+		var amaro1 = document.getElementById("amaro");
+		var amarosong = document.getElementById("amaromusic");
+		amarosong.volume = 0.2;
+		var amaroinfo = document.getElementById("amaroinfo");
+
+		var murphy1 = document.getElementById("murphy");
+		var murphysong = document.getElementById("murphymusic");
+		murphysong.volume = 0.2;
+		var murphyinfo = document.getElementById("murphyinfo");
+
+		var mdodds1 = document.getElementById("mdodds");
+		var mdoddsong = document.getElementById("mdoddsmusic");
+		mdoddsong.volume = 0.2;		
+		var mdoddsinfo = document.getElementById("mdoddsinfo");
+
+		var kat1 = document.getElementById("kat");
+		var katmusic = document.getElementById("taminmusic");
+		katmusic.volume = 0.2;
+		var katinfo = document.getElementById("katinfo");
+
+		var tucker1 = document.getElementById("tucker");
+		var tuckermusic = document.getElementById("tuckersong");
+		tuckermusic.volume = 0.2;
+		var tuckerinfo = document.getElementById("tuckerinfo");
+
+		var wdodds1 = document.getElementById("wdodds");
+		var wdoddssong = document.getElementById("wdoddsmusic");
+		wdoddssong.volume = 0.2;
+		var wdoddsinfo = document.getElementById("wdoddsinfo");
+
+		var carisi1 = document.getElementById("carisi");
+		var carisisong = document.getElementById("carisimusic");
+		carisisong.volume = 0.2;
+		var carisiinfo = document.getElementById("carisiinfo");
+
+
+		var garland1 = document.getElementById("garland");
+		var garlandsong = document.getElementById("garlandmusic");
+		garlandsong.volume = 0.2;
+		var garlandinfo = document.getElementById("garlandinfo");
 
 
 
-		// var everyone = document.getElementsByClassName("photo");
 
-
-
-		var toggle = function (a, b) {
+var toggle = function (a, b) {
     var togg = false;
     return function () {
         return (togg = !togg) ? a() : b();
     };
 };
 
-//benson
+body.addEventListener("click", function(){
+	starting.style.opacity = "0";
+});
+
 benson1.addEventListener("click", toggle(function(){
    console.log("Benson Info Now");
     benson1.style.border = "5px solid #e3fc03";
+    olivamusic.play();
+    bensoninfo.style.opacity = "1";
+   bensonconnect.style.opacity = "1";
    }, function() {
 console.log("Benson Info Gone");
 benson1.style.border = "5px solid #23CDF3";
+olivamusic.pause();
+bensoninfo.style.opacity = "0";
+
    }  )); 
 
 //rollins
@@ -320,90 +574,237 @@ rollins1.addEventListener("click", toggle(function(){
    console.log("rollins Info Now");
     rollins1.style.border = "5px solid #e3fc03";
     rollinssong.play();
+    rollinsinfo.style.opacity = "1";
    }, function() {
 console.log("rollins Info Gone");
 rollins1.style.border = "5px solid #23CDF3";
 rollinssong.pause();
+rollinsinfo.style.opacity = "0";
    }  )); 
 
 //fin
 fin1.addEventListener("click", toggle(function(){
 	console.log("Fin info now");
 	fin1.style.border = "5px solid #e3fc03";
+	finmusic.play();
+	fininfo.style.opacity = "1";
 }, function() {
 	console.log("Fin Info Gone");
 fin1.style.border = "5px solid #23CDF3";
+finmusic.pause();
+fininfo.style.opacity ="0";
 	} ));
 
 //stabler 
 stabler1.addEventListener("click", toggle(function(){
 	console.log("Stabler info now");
 	stabler1.style.border = "5px solid #e3fc03";
+	elliotsong.play();
+	stablerinfo.style.opacity = "1";
 }, function() {
 	console.log("Stabler Info Gone");
 stabler1.style.border = "5px solid #23CDF3";
+elliotsong.pause();
+stablerinfo.style.opacity = "0";
 	} ));
 
 //munch
 munch1.addEventListener("click", toggle(function(){
 	console.log("Munch info now");
 	munch1.style.border = "5px solid #e3fc03";
+	johnsong.play();
+	munchinfo.style.opacity = "1";
 }, function() {
 	console.log("Munch Info Gone");
 munch1.style.border = "5px solid #23CDF3";
+johnsong.pause();
+munchinfo.style.opacity = "0";
 	} ));
 
 //cragen 
 cragen1.addEventListener("click", toggle(function(){
 	console.log("Cragen info now");
 	cragen1.style.border = "5px solid #e3fc03";
+	cragensong.play();
+	crageninfo.style.opacity = "1";
 }, function() {
 	console.log("Cragen Info Gone");
 cragen1.style.border = "5px solid #23CDF3";
+cragensong.pause();
+crageninfo.style.opacity = "0";
 	} ));
 
 //cassidy
 cassidy1.addEventListener("click", toggle(function(){
 	console.log("Cassidy info now");
-	cassidy1.style.border = "5px solid #e3fc03"
+	cassidy1.style.border = "5px solid #e3fc03";
+	briansong.play();
+	cassidyinfo.style.opacity = "1";
 }, function () {
 	console.log("Cassidy info gone")
 	cassidy1.style.border = "5px solid #23CDF3"
+	briansong.pause();
+	cassidyinfo.style.opacity = "0";
 } ));
 
 //jeffries
 jeffries1.addEventListener("click", toggle(function() {
 	console.log("Jeffries info now");
 	jeffries1.style.border = "5px solid #e3fc03";
+	jeffriessong.play();
+	jeffriesinfo.style.opacity = "1";
 }, function() {
 	console.log("Jeffries info gone");
 	jeffries1.style.border = "5px solid #23CDF3";
+	jeffriessong.pause();
+	jeffriesinfo.style.opacity = "0";
 } ));
 
 //dani
 dani1.addEventListener("click", toggle(function() {
 	console.log("Dani info now");
 	dani1.style.border = "5px solid #e3fc03";
+	danimusic.play();
+	daninfo.style.opacity = "1";
 }, function() {
 	console.log("Dani info gone");
 	dani1.style.border = "5px solid #23CDF3";
+	danimusic.pause();
+	daninfo.style.opacity = "0";
 } ));
 
+//lake
+lake1.addEventListener("click", toggle(function() {
+	console.log("Lake info now");
+	lake1.style.border = "5px solid #e3fc03";
+	lakesong.play();
+	lakeinfo.style.opacity = "1";
+}, function() {
+	console.log("Lake info gone");
+	lake1.style.border = "5px solid #23CDF3";
+	lakesong.pause();
+	lakeinfo.style.opacity = "0";
+} ));
 
+//amaro
+amaro1.addEventListener("click", toggle(function() {
+	console.log("Amaro info now");
+	amaro1.style.border = "5px solid #e3fc03";
+	amarosong.play();
+	amaroinfo.style.opacity = "1";
+}, function() {
+	console.log("Amaro info gone");
+	amaro1.style.border = "5px solid #23CDF3";
+	amarosong.pause();
+	amaroinfo.style.opacity = "0";
+} ));
+
+//murphy 
+murphy1.addEventListener("click", toggle(function(){
+	console.log("Murphy info now");
+	murphy1.style.border = "5px solid #e3fc03";
+	murphysong.play();
+	murphyinfo.style.opacity = "1";
+}, function() {
+   console.log("Murphy info gone");
+   murphy1.style.border = "5px solid #23CDF3";
+   murphysong.pause();
+   murphyinfo.style.opacity = "0";
+} ));
+
+//mike dodds 
+mdodds1.addEventListener("click", toggle(function(){
+	console.log("Mike Dodds info now");
+	mdodds1.style.border = "5px solid #e3fc03";
+	mdoddsong.play();
+	mdoddsinfo.style.opacity = "1";
+}, function() {
+	console.log("Mike Dodds info gone");
+	mdodds1.style.border = "5px solid #23CDF3";
+	mdoddsong.pause();
+	mdoddsinfo.style.opacity = "0";
+} ));
+
+//Kat Tamin  
+kat1.addEventListener("click", toggle(function(){
+	console.log("Kat info now");
+	kat1.style.border = "5px solid #e3fc03";
+	katmusic.play();
+	katinfo.style.opacity = "1";
+}, function() {
+	console.log("Kat info gone");
+	kat1.style.border = "5px solid #23CDF3";
+	katmusic.pause();
+	katinfo.style.opacity = "0";
+} ));
+
+//Ed Tucker 
+tucker1.addEventListener("click", toggle(function(){
+	console.log("Tucker info now");
+	tucker1.style.border = "5px solid #e3fc03";
+	tuckermusic.play();
+	tuckerinfo.style.opacity = "1";
+}, function() {
+	console.log("Tucker info gone");
+	tucker1.style.border = "5px solid #23CDF3";
+	tuckermusic.pause();
+	tuckerinfo.style.opacity = "0";
+} ));
+
+//William Dodds 
+wdodds1.addEventListener("click", toggle(function(){
+	console.log("William Dodds info now");
+	wdodds1.style.border = "5px solid #e3fc03";
+	wdoddssong.play();
+	wdoddsinfo.style.opacity = "1";
+}, function() {
+	console.log("William Dodds info gone");
+	wdodds1.style.border = "5px solid #23CDF3";
+	wdoddssong.pause();
+	wdoddsinfo.style.opacity = "0";
+} ));
+
+//Carisi 
+carisi1.addEventListener("click", toggle(function(){
+	console.log("Carisi info now");
+	carisi1.style.border = "5px solid #e3fc03";
+	carisisong.play();
+	carisiinfo.style.opacity = "1";
+}, function() {
+	console.log("Carisi info gone");
+	carisi1.style.border = "5px solid #23CDF3";
+	carisisong.pause();
+	carisiinfo.style.opacity = "0";
+} ));
+
+//Garland
+garland1.addEventListener("click", toggle(function(){
+	console.log("Garland info now");
+	garland1.style.border = "5px solid #e3fc03";
+	garlandsong.play();
+	garlandinfo.style.opacity = "1";
+}, function() {
+	console.log("Garland info gone");
+	garland1.style.border = "5px solid #23CDF3";
+	garlandsong.pause();
+	garlandinfo.style.opacity = "0";
+} ));
 
 
 </script>
 
 </center>
-<div>
-	<a class="journallink"href="index.html">
- 	Click here to go home 🏠
- </a>
  <div id="key">
  	<h2>Green is for If they were Partners</h2>
- 	<h3>Blue is for if they ___________</h3>
+ 	<h3>Blue is for if they are blood related</h3>
  	<h4>Red if they ever dataed or kissed</h4>
- </div>	 	
+ 	<h6>Orange is who they were in charge of</h6>
+ 	<a class="journallink"href="index.html">
+ 	Click here to go home
+ </a>
+ <a href="codesketch2.html">
+ 	Click here to restart
+ </a>	 	
 </div>
 </body>
 </html>
