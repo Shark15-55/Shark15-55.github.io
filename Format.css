@@ -13,6 +13,7 @@
       background-color: #0abdc9;
       margin: 0;
       background-size: cover;
+      background-repeat: no-repeat;
       background-image: url(https://i.etsystatic.com/23836021/r/il/2428ef/2632234705/il_570xN.2632234705_vgkg.jpg);
  }
    #jbody {
