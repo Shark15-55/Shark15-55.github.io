@@ -121,9 +121,9 @@
       top: 100px;
       background-color: red;
       width: 400px;
-      height: 300px;
-      left: 450px;
-      top: 190px;
+      height: 320px;
+      left: 430px;
+      top: 180px;
       z-index: 0;
       text-align: center;
       text-overflow: scroll;
@@ -187,7 +187,11 @@
 
 		h5{
 			color: blue;
-			font-size: 40px;
+			font-size: 30px;
+		}
+
+		p{
+			font-size: 13px;
 		}
 
 .main {
@@ -286,6 +290,7 @@
  <center>
     <!-- do the connections like this but find a way to make backround transparent and size correctly because the sizing is weird but Other then that it should work well -->
  	<img class="lines" id="bensonconnect" src="bensonlines3.jpg">
+ 	<img class="lines" id="rollinsfakeconnect" src="bensonlines.png">
 
 
 
@@ -299,17 +304,19 @@
  	</div>
  		<div class="info" id="bensoninfo">
  			<h1>Captian Oliva Benson</h1>
- 			<p>these are the words on the slide. Info about Benson. She is cool.</p>
+ 			<p>Benson is the main character played by actor Mariska Hargitay. She is the only cast member who has been there since season one. Starting the shows with the golden duo of Stabler and Benson as the main detectives she continued her way up the ranks after her 12 season long partner left. In season 21 she finally makes it to captain. In season 15 she is kidnapped and held against her will by rape suspect William Lewis for 3 days. That story line is a major one in her charter development along with her sexual assault story line in season 9's episode “Undercover”.  She also adopted Noah Porter Benson is Season 16. With SVU on its 22 season, it is not only the longest running tv drama but she is the longest running tv drama character in the history of television!
+
+</p>
  		</div>
 
  		<div class="info" id="rollinsinfo">
  			<h1>Detective Amanda Rollins</h1>
- 			<p>these are the words on the slide. Info about rollins. She is also cool.</p>
+ 			<p>Rollins transferred to Manhattan SVU in season 14 from Georgia. Though it is not reveled until season’s 16 episode 10 “Forgiving Rollins” the reason for her transfer is due to her Deputy Chief raping her. Along with that Rollins also deals with her drug addicted convict sister. Her sister Kim returns in many different episodes cause havoc on Rollins life and threatening her job a couple times. Rollins also has two kids from two different fathers. The first one Jessie is from luetindent Declan Murphy who helps her when she gets into trouble with her gambling addiction. Doctor AL who she had her second daughter Billy with. No real information is said about doctor al except that he trued to marry her but she was not sure about it. Although it is not explicitly said both dads seem supportive of her even though she is raising the girls alone. In season 21 she is finally promoted to detective second grade after working in SVU for almost 7 years. </p>
  		</div>
 
  		<div class="info" id="finninfo">
  			<h1>Sargent Otafin Tutola</h1>
- 			<p>these are the words on the slide. Info about Finn. He is also cool.</p>
+ 			<p>Fin joins the SVU squad in season 2 episode 1. Although he has been around for so long that many people think he was in the original cast. Fin played by Ice T has been a staple fan favorite from his oringal partner Munch all the way to now being a Sargent. Fin transferred from Brooklyn Narcotics and in season 9 tries to transfer back after his relationship with stabler got shaky but his transfer feel through and he stayed and stabler regained his trust. Now he serves buy Benson side and has been a support to her since his day one. Fin’s family includes his son which was one of the first non victim gay characters on the show who he was also estranged from but regained their relasonsh. His soon and husband now have a kid making fin a proud granddad. Fin’s ex-wife moves out of town when during one episode a cousin gets in convicted for murder. In early season 22 fin gets engaged to Phoebe Baker who he used to work with back in narcotics. </p>
  		</div>
 
  		<div class="info" id="stablerinfo">
@@ -450,6 +457,7 @@
 		var rollinssong = document.getElementById("rollinsmusic");
 		rollinssong.volume = 0.2;
 		var rollinsinfo = document.getElementById("rollinsinfo");
+		var fakelines = document.getElementById("rollinsfakeconnect");
 
 //fin  
 		var fin1 = document.getElementById("fin");
@@ -575,6 +583,7 @@ rollins1.addEventListener("click", toggle(function(){
     rollins1.style.border = "5px solid #e3fc03";
     rollinssong.play();
     rollinsinfo.style.opacity = "1";
+       fakelines.style.opacity = "1";
    }, function() {
 console.log("rollins Info Gone");
 rollins1.style.border = "5px solid #23CDF3";
