@@ -2,103 +2,20 @@
 <html>
 <head>
 	<title>Detective's Web</title>
+	<link rel="shortcut icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDTRu6P-zUPhNpsn-sA8pc4GCRj8whepTC9A&usqp=CAU">
 	<style type="text/css">
-/*	#benson {
-		/*position: relative;
-      top: 0px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      background-color: blue;
-     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSnMcKWOifax4uxfscOr5ojxOWh2gr5F0K_Q&usqp=CAU); 
-		}
-
-		#rollins {
-     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRta8hoW1ZE-8KQgRedlx0-oNGNjxUYUxcPKQ&usqp=CAU); 
- }
-     	
-		}
-    #fin{
-
-     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyFrCDhir4jzMx4UhzJpMCTEgmfFk9oICl-Q&usqp=CAU);
-		} 
 
 
-		 #stabler{
-
-     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUkDGjMetCjy05PFGHsgXS4C92k1kraRN6WQ&usqp=CAU); 
-   
-		}
-
-		 #munch{
-     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkVorVOLbJB9TZ5cUVN6EkmgR1ICznu1JNMg&usqp=CAU); 
-		}
-
-
-
-			 #cragen{
-		
-     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFwhdpCCYlgOZ7BH04BTUlj1IyNzpmdiD5DQ&usqp=CAU); 
-    
-		}
-
- #cassidy{
-     background-image: url(cassidy.jpeg); 
-		}
-
-		 #jeffries{
-     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmWQzMwyJaQk1w5Iv9HZ5v9QL8l6VzZqnihw&usqp=CAU); 
-		}
-
-		 #dani{
-     background-image: url(dani.jpeg); 
-		}
-
-		 #lake{
-     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHPWZo1felS_2WwKpuqjfSu9K1BclRDE3f1g&usqp=CAU); 
-		}
-
-		 #amaro{
-     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuy5bsyL1BPKbrhxJdr4d4uhgtXcvbi2mE4Q&usqp=CAU); 
-		}
-
-		 #murphy{
-     background-image: url(murphy.jpeg); 
-		}
-
-
-		 #mdodds{
-     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqfJb8olftW_Nf1f1tKxL_ieFKthB1wNqEQ&usqp=CAU); 
-		}
-
-		 #kat{
-     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ezTkZpBJqoHsIBnXKmEK0msC-bYIozZMQg&usqp=CAU); 
-		}
-
-		 #tucker{
-     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2JAc4iWa3FVJYFM6OVClBA4EZyE3TruYCsQ&usqp=CAU); 
-		}
-		 #wdodds {
-     background-image: url(wdodds.jpeg); 
-		}
-
-		 #carisi{
-     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpNqx81OwpzC99W9GxAiZm_rOiSevSIe70Uw&usqp=CAU); 
-		}
-
-		 #garland{
-     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-nupEOPJU5SO5dI6MSQQ25NonvrKb-544kw&usqp=CAU); 
-		}
-		*/
 
 
 #key {
 	text-align: center;
 	font-family: hevetica; 
 	width: 200px;
-	height: 360px;
+	height: 760px;
 	position: fixed;
 	top: -5px;
+	z-index: -4;
 
 
 	background-color: white;
@@ -129,6 +46,18 @@
       text-overflow: scroll;
       opacity: 0;
 		}
+
+		.blackbox {
+	  position: fixed;
+      top: 100px;
+      background-color: black;
+      width: 400px;
+      height: 320px;
+      left: 430px;
+      top: 180px;
+      z-index: -2;
+      opacity: 0;
+		}
 	
 		.start {
 	  position: fixed;
@@ -154,7 +83,7 @@
 }
 
 .lines {
-	z-index: -2;
+	z-index: -1;
 	opacity: 0;
 	position: fixed;
 	left: 280px;
@@ -195,7 +124,7 @@
 		}
 
 .main {
-    border: 2px dotted #000000;
+    border: 2px /*dotted #000000*/;
     border-radius: 50%;
     width: 600px;
     height: 600px;
@@ -289,8 +218,9 @@
 
  <center>
     <!-- do the connections like this but find a way to make backround transparent and size correctly because the sizing is weird but Other then that it should work well -->
- 	<img class="lines" id="bensonconnect" src="bensonlines3.jpg">
- 	<img class="lines" id="rollinsfakeconnect" src="bensonlines.png">
+ 	<img class="lines" id="bensonconnect" src="realbensonlines.png">
+ 	<img class="lines" id="rollinsconnect" src="realrollinslines.png">
+ 	<img class="lines" id="finconnect" src="realfinlines.png">
 
 
 
@@ -302,11 +232,11 @@
  		<h5>The SVU Detectives Coneection Web</h5>
  		<p id="start2">Click anybody to get started</p>
  	</div>
+ 	<div class="blackbox" id="black"></div>
  		<div class="info" id="bensoninfo">
  			<h1>Captian Oliva Benson</h1>
- 			<p>Benson is the main character played by actor Mariska Hargitay. She is the only cast member who has been there since season one. Starting the shows with the golden duo of Stabler and Benson as the main detectives she continued her way up the ranks after her 12 season long partner left. In season 21 she finally makes it to captain. In season 15 she is kidnapped and held against her will by rape suspect William Lewis for 3 days. That story line is a major one in her charter development along with her sexual assault story line in season 9's episode “Undercover”.  She also adopted Noah Porter Benson is Season 16. With SVU on its 22 season, it is not only the longest running tv drama but she is the longest running tv drama character in the history of television!
-
-</p>
+ 			<p>Benson is the main character played by actor Mariska Hargitay. She is the only cast member who has been there since season one. Starting the shows with the golden duo of Stabler and Benson as the main detectives she continued her way up the ranks after her 12 season long partner left. In season 21 she finally makes it to captain. In season 15 she is kidnapped and held against her will by rape suspect William Lewis for 3 days. That story line is a major one in her charter development along with her sexual assault story line in season 9's episode “Undercover”.  She also adopted Noah Porter Benson is Season 16. With SVU on its 22 season, it is not only the longest running tv drama but she is the longest running tv drama character in the history of television!</p>
+ 			<p>Click Benson again to look at her connections more clearly</p>
  		</div>
 
  		<div class="info" id="rollinsinfo">
@@ -444,6 +374,7 @@
 
         var body = document.getElementById("body");
         var starting = document.getElementById("start"); 
+        var start = document.getElementById("black");
 
 		var benson1 = document.getElementById("benson");
 		var olivasongs = document.getElementById("olivamusic");
@@ -457,13 +388,14 @@
 		var rollinssong = document.getElementById("rollinsmusic");
 		rollinssong.volume = 0.2;
 		var rollinsinfo = document.getElementById("rollinsinfo");
-		var fakelines = document.getElementById("rollinsfakeconnect");
+		var rollinslines = document.getElementById("rollinsconnect");
 
 //fin  
 		var fin1 = document.getElementById("fin");
 		var finsong = document.getElementById("finmusic");
 		finmusic.volume = 0.2;
 		var fininfo = document.getElementById("finninfo");
+		var finlines = document.getElementById("finconnect");
 
 
 
@@ -559,8 +491,10 @@ var toggle = function (a, b) {
     };
 };
 
-body.addEventListener("click", function(){
-	starting.style.opacity = "0";
+
+
+document.addEventListener("click", function(){
+	start.style.opacity = "1";
 });
 
 benson1.addEventListener("click", toggle(function(){
@@ -583,7 +517,7 @@ rollins1.addEventListener("click", toggle(function(){
     rollins1.style.border = "5px solid #e3fc03";
     rollinssong.play();
     rollinsinfo.style.opacity = "1";
-       fakelines.style.opacity = "1";
+       rollinslines.style.opacity = "1";
    }, function() {
 console.log("rollins Info Gone");
 rollins1.style.border = "5px solid #23CDF3";
@@ -597,6 +531,7 @@ fin1.addEventListener("click", toggle(function(){
 	fin1.style.border = "5px solid #e3fc03";
 	finmusic.play();
 	fininfo.style.opacity = "1";
+	finlines.style.opacity = "1";
 }, function() {
 	console.log("Fin Info Gone");
 fin1.style.border = "5px solid #23CDF3";
@@ -813,7 +748,16 @@ garland1.addEventListener("click", toggle(function(){
  </a>
  <a href="codesketch2.html">
  	Click here to restart
- </a>	 	
+ </a>
+ <p>Benson connections gone</p>	
+ <p>Benson connections gone</p>	  	
+ <p>Benson connections gone</p>	 
+ <p>Benson connections gone</p>	 
+ <p>Benson connections gone</p>	 
+ <p>Benson connections gone</p>	 
+ <p>Benson connections gone</p>	 
+ <p>Benson connections gone</p>	 
+ <p>Benson connections gone</p>	 
 </div>
 </body>
 </html>
