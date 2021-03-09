@@ -11,7 +11,7 @@
 #key {
 	text-align: center;
 	font-family: hevetica; 
-	width: 200px;
+	width: 180px;
 	height: 760px;
 	position: fixed;
 	top: -5px;
@@ -88,6 +88,15 @@
 	position: fixed;
 	left: 280px;
 	width: 700px;
+	height: 800px;
+}
+
+.slines {
+	z-index: -1;
+	opacity: 0;
+	position: fixed;
+	left: 280px;
+	width: 800px;
 	height: 800px;
 }
 
@@ -221,6 +230,11 @@
  	<img class="lines" id="bensonconnect" src="realbensonlines.png">
  	<img class="lines" id="rollinsconnect" src="realrollinslines.png">
  	<img class="lines" id="finconnect" src="realfinlines.png">
+ 	<img class="lines" id="stablerconnect" src="realelliotlines.png">
+ 	<img class="lines" id="munchconnect" src="realmunchlines.png">
+ 	<img class="slines" id="cragenconnect" src="realcragenlines.png">
+ 	<img class="lines" id="cassidyconnect" src="realcassidylines.png">
+ 	<!-- re-do img class="lines" id="jeffriesconnect" src="realjeffrieslines.png"-->
 
 
 
@@ -235,7 +249,7 @@
  	<div class="blackbox" id="black"></div>
  		<div class="info" id="bensoninfo">
  			<h1>Captian Oliva Benson</h1>
- 			<p>Benson is the main character played by actor Mariska Hargitay. She is the only cast member who has been there since season one. Starting the shows with the golden duo of Stabler and Benson as the main detectives she continued her way up the ranks after her 12 season long partner left. In season 21 she finally makes it to captain. In season 15 she is kidnapped and held against her will by rape suspect William Lewis for 3 days. That story line is a major one in her charter development along with her sexual assault story line in season 9's episode “Undercover”.  She also adopted Noah Porter Benson is Season 16. With SVU on its 22 season, it is not only the longest running tv drama but she is the longest running tv drama character in the history of television!</p>
+ 			<p>Benson is the main character played by actor Mariska Hargitay. She is the only cast member who has been there since season one. Starting the shows with the dynamic duo of Stabler and Benson as the main detectives she continued her way up the ranks after her 12 season long partner left. He partners include famous stabler, Finn, Rollins, and Amaro. In season 21 she finally makes it to captain. Her romantic partners include Tucker, and Cassidy who were police an others who were not. In season 15 she is kidnapped and held against her will by rape suspect William Lewis for 3 days. That story line is a major one in her charter development along with her sexual assault story line in season 9's episode “Undercover”. One of the reason she works SVU is because she is the products of her drunk of a mothers rape. In later season she finds her half brother but he is an addict and only causes trouble until he get cleanw and then dies of an acidental overdose. She also adopted Noah Porter Benson is Season 16. With SVU on its 22 season, it is not only the longest running tv drama but she is the longest running tv drama character in the history of television!</p>
  			<p>Click Benson again to look at her connections more clearly</p>
  		</div>
 
@@ -403,30 +417,35 @@
 		var elliotsong = document.getElementById('stablermusic');
 		elliotsong.volume = 0.2;
 		var stablerinfo = document.getElementById("stablerinfo");
+		var stablerlines = document.getElementById("stablerconnect");
 		
 
 		var munch1 = document.getElementById("munch");
 		var johnsong = document.getElementById("munchmusic");
 		johnsong.volume = 0.2;
 		var munchinfo = document.getElementById("munchinfo");
+		var munchlines = document.getElementById("munchconnect");
 
 
 		var cragen1 = document.getElementById("cragen");
 		var cragensong = document.getElementById("donaldmusic");
 		cragensong.volume = 0.2;
 		var cargeninfo = document.getElementById("crageninfo");
+		var cragenlines = document.getElementById("cragenconnect");
 
 
 		var cassidy1 = document.getElementById("cassidy");
 		var briansong = document.getElementById("cassidymusic");
 		briansong.volume = 0.2;
 		var cassidyinfo = document.getElementById("cassidyinfo"); 
+		var cassidylines = document.getElementById("cassidyconnect");
 
 
 		var jeffries1 = document.getElementById("jeffries");
 		var jeffriessong = document.getElementById("jeffriesong");
 		jeffriessong.volume = 0.2;
 		var jeffriesinfo = document.getElementById("jeffriesinfo");
+		var jeffrieslines = document.getElementById("jeffriesconnect");
 
 
 		var dani1 = document.getElementById("dani");
@@ -508,7 +527,6 @@ console.log("Benson Info Gone");
 benson1.style.border = "5px solid #23CDF3";
 olivamusic.pause();
 bensoninfo.style.opacity = "0";
-
    }  )); 
 
 //rollins
@@ -545,6 +563,7 @@ stabler1.addEventListener("click", toggle(function(){
 	stabler1.style.border = "5px solid #e3fc03";
 	elliotsong.play();
 	stablerinfo.style.opacity = "1";
+	stablerlines.style.opacity = "1";
 }, function() {
 	console.log("Stabler Info Gone");
 stabler1.style.border = "5px solid #23CDF3";
@@ -558,6 +577,7 @@ munch1.addEventListener("click", toggle(function(){
 	munch1.style.border = "5px solid #e3fc03";
 	johnsong.play();
 	munchinfo.style.opacity = "1";
+	munchlines.style.opacity = "1";
 }, function() {
 	console.log("Munch Info Gone");
 munch1.style.border = "5px solid #23CDF3";
@@ -571,6 +591,7 @@ cragen1.addEventListener("click", toggle(function(){
 	cragen1.style.border = "5px solid #e3fc03";
 	cragensong.play();
 	crageninfo.style.opacity = "1";
+	cragenlines.style.opacity = "1";
 }, function() {
 	console.log("Cragen Info Gone");
 cragen1.style.border = "5px solid #23CDF3";
@@ -584,6 +605,7 @@ cassidy1.addEventListener("click", toggle(function(){
 	cassidy1.style.border = "5px solid #e3fc03";
 	briansong.play();
 	cassidyinfo.style.opacity = "1";
+	cassidylines.style.opacity = "1";
 }, function () {
 	console.log("Cassidy info gone")
 	cassidy1.style.border = "5px solid #23CDF3"
@@ -597,6 +619,7 @@ jeffries1.addEventListener("click", toggle(function() {
 	jeffries1.style.border = "5px solid #e3fc03";
 	jeffriessong.play();
 	jeffriesinfo.style.opacity = "1";
+	jeffrieslines.style.opacity = "1";
 }, function() {
 	console.log("Jeffries info gone");
 	jeffries1.style.border = "5px solid #23CDF3";
@@ -749,15 +772,56 @@ garland1.addEventListener("click", toggle(function(){
  <a href="codesketch2.html">
  	Click here to restart
  </a>
- <p>Benson connections gone</p>	
- <p>Benson connections gone</p>	  	
- <p>Benson connections gone</p>	 
- <p>Benson connections gone</p>	 
- <p>Benson connections gone</p>	 
- <p>Benson connections gone</p>	 
- <p>Benson connections gone</p>	 
- <p>Benson connections gone</p>	 
- <p>Benson connections gone</p>	 
-</div>
+ <button onclick="nobensonconnect()">Benson Conection Gone</button>
+ <button onclick="norollinsconnect()">Rollins Connections Gone</button> 
+ <button onclick="nofinconnect()">Fin Connections Gone</button>  	
+ <button onclick="nostablerconnect()">Stabler Connections Gone</button> 
+ <button onclick="nomunchconnect()">Munch Connections Gone</button> 
+ <button onclick="nocragenconnect()">Cragen Connections Gone</button> 
+ <button onclick="nocassidyconnect()">Cassidy Connections Gone</button>  
+ <button onclick="nojeffriesconnect()">Jeffries Connections Gone</button>  
+ <button onclick="()">Beck Connections Gone</button> 
+ <button onclick="()">Lake Connections Gone</button>
+ <button onclick="()">Amaro Connections Gone</button> 
+ <button onclick="()">Murphy Connections Gone</button> 
+ <button onclick="()">MDodds Connections Gone</button> 
+ <button onclick="()">Kat Connections Gone</button>  
+ <button onclick="()">Tucker Connections Gone</button>  
+ <button onclick="()">Carisi Connections Gone</button> 
+ <button onclick="()">Garland Connections Gone</button>
+  </div>
+<script type="text/javascript">
+function nobensonconnect() {
+	bensonconnect.style.opacity = "0";
+};
+
+function norollinsconnect() {
+	rollinsconnect.style.opacity = "0";
+};
+
+function nofinconnect() {
+	finconnect.style.opacity = "0";
+};
+
+function nostablerconnect() {
+	stablerconnect.style.opacity = "0";
+};
+
+function nomunchconnect() {
+	munchconnect.style.opacity = "0";
+};
+
+function nocragenconnect() {
+	cragenconnect.style.opacity = "0";
+};
+function nocassidyconnect() {
+	cassidyconnect.style.opacity = "0";
+};
+
+function nojeffriesconnect() {
+	jeffriesconnect.style.opacity = "0";
+};
+	
+</script>
 </body>
 </html>

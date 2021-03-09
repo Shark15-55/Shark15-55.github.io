@@ -125,11 +125,12 @@ background-color: rgba(252, 186, 3, 0.5);
   }
   #soundwords {
   	width: 50%;
-  	top: 0%;
+  	top: 0px;
   	height: 50px;
-  	background-color: green;
+  	/*background-color: green;*/
   	left: 50%;
-  	position: relative;
+  	position: fixed;
+
   	font-family: 'Reenie Beanie';
   	font-size: 20px; 
     text-align: right;
