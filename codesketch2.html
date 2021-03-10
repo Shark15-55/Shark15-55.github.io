@@ -6,7 +6,10 @@
 	<style type="text/css">
 
 
-
+#button1 {
+  top: 5px;
+  margin: 10px;
+}
 
 #key {
 	text-align: center;
@@ -108,19 +111,26 @@
 		h3 {
 			color: blue;
 			font-size: 20px;
+			margin: 5px;
+
 		}
 		h2 {
 			color: green;
 			font-size: 20px;
+			margin: 5px;
+
 		}
 		h4 {
 			color: red;
 			font-size: 20px;
+			margin: 5px;
+
 		}
 
 		h6 {
 			color: orange;
 			font-size: 20px;
+			margin: 5px;
 		}
 
 		h5{
@@ -226,7 +236,8 @@
 <body id="body">
 
  <center>
-    <!-- do the connections like this but find a way to make backround transparent and size correctly because the sizing is weird but Other then that it should work well -->
+
+ <!-- These are the lines -->
  	<img class="lines" id="bensonconnect" src="realbensonlines.png">
  	<img class="lines" id="rollinsconnect" src="realrollinslines.png">
  	<img class="lines" id="finconnect" src="realfinlines.png">
@@ -234,14 +245,21 @@
  	<img class="lines" id="munchconnect" src="realmunchlines.png">
  	<img class="slines" id="cragenconnect" src="realcragenlines.png">
  	<img class="lines" id="cassidyconnect" src="realcassidylines.png">
- 	<!-- re-do img class="lines" id="jeffriesconnect" src="realjeffrieslines.png"-->
+ 	<img class="lines" id="jeffriesconnect" src="realjeffrieslines.png">
+ 	<img class="lines" id="daniconnect" src="realdanilines.png">
+ 	<img class="lines" id="lakeconnect" src="reallakelines.png">
+ 	<img class="lines" id="nickconnect" src="realamarolines.png">
+ 	<img class="lines" id="murphyconnect" src="realmurphylines.png">
+ 	<img class="lines" id="mdoddsconnect" src="realmdoddslines.png">
+ 	<img class="lines" id="katconnect" src="realkatlines.png">
+ 	<img class="lines" id="tuckerconnect" src="realtuckerlines.png">
+ 	<img class="lines" id="carisiconnect" src="realcarisilines.png">
+ 	<img class="lines" id="wdoddsconnect" src="realwdoddslines.png">
+ 	<img class="slines" id="garlandconnect" src="realgarlandlines.png">
 
 
 
-
-
-
-
+<!-- the info paragraphs -->
  	<div class="start"> 
  		<h5>The SVU Detectives Coneection Web</h5>
  		<p id="start2">Click anybody to get started</p>
@@ -343,7 +361,7 @@
  	
  	 
  	
-
+<!-- the Photos of people-->
  <div class="main">
  	<img class="photo" id="benson" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSnMcKWOifax4uxfscOr5ojxOWh2gr5F0K_Q&usqp=CAU">
  	<img class="photo" id="rollins" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRta8hoW1ZE-8KQgRedlx0-oNGNjxUYUxcPKQ&usqp=CAU">
@@ -385,7 +403,7 @@
 </div>
 <script type="text/javascript">
 
-
+//varibles 
         var body = document.getElementById("body");
         var starting = document.getElementById("start"); 
         var start = document.getElementById("black");
@@ -452,56 +470,65 @@
 		var danimusic = document.getElementById("danisong");
 		danimusic.volume = 0.2;
 		var daninfo = document.getElementById("daniinfo");
+		var danilines = document.getElementById("daniconnect");
 		
 
 		var lake1 = document.getElementById("lake");
 		var lakesong = document.getElementById("lakemusic");
 		lakesong.volume = 0.2;
 		var lakeinfo = document.getElementById("lakeinfo");
+		var lakelines = document.getElementById("lakeconnect");
 
 		var amaro1 = document.getElementById("amaro");
 		var amarosong = document.getElementById("amaromusic");
 		amarosong.volume = 0.2;
 		var amaroinfo = document.getElementById("amaroinfo");
+		var amarolines = document.getElementById("nickconnect");
 
 		var murphy1 = document.getElementById("murphy");
 		var murphysong = document.getElementById("murphymusic");
 		murphysong.volume = 0.2;
 		var murphyinfo = document.getElementById("murphyinfo");
+		var murphylines = document.getElementById("murphyconnect");
 
 		var mdodds1 = document.getElementById("mdodds");
 		var mdoddsong = document.getElementById("mdoddsmusic");
 		mdoddsong.volume = 0.2;		
 		var mdoddsinfo = document.getElementById("mdoddsinfo");
+		var mdoddslines = document.getElementById("mdoddsconnect");
 
 		var kat1 = document.getElementById("kat");
 		var katmusic = document.getElementById("taminmusic");
 		katmusic.volume = 0.2;
 		var katinfo = document.getElementById("katinfo");
+		var katlines = document.getElementById("katconnect");
 
 		var tucker1 = document.getElementById("tucker");
 		var tuckermusic = document.getElementById("tuckersong");
 		tuckermusic.volume = 0.2;
 		var tuckerinfo = document.getElementById("tuckerinfo");
+		var tuckerlines = document.getElementById("tuckerconnect");
 
 		var wdodds1 = document.getElementById("wdodds");
 		var wdoddssong = document.getElementById("wdoddsmusic");
 		wdoddssong.volume = 0.2;
 		var wdoddsinfo = document.getElementById("wdoddsinfo");
+		var wdoddslines = document.getElementById("wdoddsconnect");
 
 		var carisi1 = document.getElementById("carisi");
 		var carisisong = document.getElementById("carisimusic");
 		carisisong.volume = 0.2;
 		var carisiinfo = document.getElementById("carisiinfo");
+		var carisilines =document.getElementById("carisiconnect");
 
 
 		var garland1 = document.getElementById("garland");
 		var garlandsong = document.getElementById("garlandmusic");
 		garlandsong.volume = 0.2;
 		var garlandinfo = document.getElementById("garlandinfo");
+		var garlandlines = document.getElementById("garlandconnect");
 
-
-
+//the functions 
 
 var toggle = function (a, b) {
     var togg = false;
@@ -633,6 +660,7 @@ dani1.addEventListener("click", toggle(function() {
 	dani1.style.border = "5px solid #e3fc03";
 	danimusic.play();
 	daninfo.style.opacity = "1";
+	danilines.style.opacity = "1";
 }, function() {
 	console.log("Dani info gone");
 	dani1.style.border = "5px solid #23CDF3";
@@ -646,6 +674,7 @@ lake1.addEventListener("click", toggle(function() {
 	lake1.style.border = "5px solid #e3fc03";
 	lakesong.play();
 	lakeinfo.style.opacity = "1";
+	lakelines.style.opacity = "1";
 }, function() {
 	console.log("Lake info gone");
 	lake1.style.border = "5px solid #23CDF3";
@@ -659,6 +688,7 @@ amaro1.addEventListener("click", toggle(function() {
 	amaro1.style.border = "5px solid #e3fc03";
 	amarosong.play();
 	amaroinfo.style.opacity = "1";
+	amarolines.style.opacity = "1";
 }, function() {
 	console.log("Amaro info gone");
 	amaro1.style.border = "5px solid #23CDF3";
@@ -672,6 +702,7 @@ murphy1.addEventListener("click", toggle(function(){
 	murphy1.style.border = "5px solid #e3fc03";
 	murphysong.play();
 	murphyinfo.style.opacity = "1";
+	murphylines.style.opacity = "1";
 }, function() {
    console.log("Murphy info gone");
    murphy1.style.border = "5px solid #23CDF3";
@@ -685,6 +716,7 @@ mdodds1.addEventListener("click", toggle(function(){
 	mdodds1.style.border = "5px solid #e3fc03";
 	mdoddsong.play();
 	mdoddsinfo.style.opacity = "1";
+	mdoddslines.style.opacity = "1";
 }, function() {
 	console.log("Mike Dodds info gone");
 	mdodds1.style.border = "5px solid #23CDF3";
@@ -698,6 +730,7 @@ kat1.addEventListener("click", toggle(function(){
 	kat1.style.border = "5px solid #e3fc03";
 	katmusic.play();
 	katinfo.style.opacity = "1";
+	katlines.style.opacity = "1";
 }, function() {
 	console.log("Kat info gone");
 	kat1.style.border = "5px solid #23CDF3";
@@ -711,6 +744,7 @@ tucker1.addEventListener("click", toggle(function(){
 	tucker1.style.border = "5px solid #e3fc03";
 	tuckermusic.play();
 	tuckerinfo.style.opacity = "1";
+	tuckerlines.style.opacity = "1";
 }, function() {
 	console.log("Tucker info gone");
 	tucker1.style.border = "5px solid #23CDF3";
@@ -724,6 +758,7 @@ wdodds1.addEventListener("click", toggle(function(){
 	wdodds1.style.border = "5px solid #e3fc03";
 	wdoddssong.play();
 	wdoddsinfo.style.opacity = "1";
+	wdoddslines.style.opacity = "1";
 }, function() {
 	console.log("William Dodds info gone");
 	wdodds1.style.border = "5px solid #23CDF3";
@@ -737,6 +772,7 @@ carisi1.addEventListener("click", toggle(function(){
 	carisi1.style.border = "5px solid #e3fc03";
 	carisisong.play();
 	carisiinfo.style.opacity = "1";
+	carisilines.style.opacity = "1";
 }, function() {
 	console.log("Carisi info gone");
 	carisi1.style.border = "5px solid #23CDF3";
@@ -750,6 +786,7 @@ garland1.addEventListener("click", toggle(function(){
 	garland1.style.border = "5px solid #e3fc03";
 	garlandsong.play();
 	garlandinfo.style.opacity = "1";
+	garlandlines.style.opacity = "1";
 }, function() {
 	console.log("Garland info gone");
 	garland1.style.border = "5px solid #23CDF3";
@@ -759,9 +796,10 @@ garland1.addEventListener("click", toggle(function(){
 
 
 </script>
-
+<!-- the key and buttons -->
 </center>
  <div id="key">
+ 	<button id="button1" onclick="instructions()">Click for Instructions</button>
  	<h2>Green is for If they were Partners</h2>
  	<h3>Blue is for if they are blood related</h3>
  	<h4>Red if they ever dataed or kissed</h4>
@@ -780,17 +818,20 @@ garland1.addEventListener("click", toggle(function(){
  <button onclick="nocragenconnect()">Cragen Connections Gone</button> 
  <button onclick="nocassidyconnect()">Cassidy Connections Gone</button>  
  <button onclick="nojeffriesconnect()">Jeffries Connections Gone</button>  
- <button onclick="()">Beck Connections Gone</button> 
- <button onclick="()">Lake Connections Gone</button>
- <button onclick="()">Amaro Connections Gone</button> 
- <button onclick="()">Murphy Connections Gone</button> 
- <button onclick="()">MDodds Connections Gone</button> 
- <button onclick="()">Kat Connections Gone</button>  
- <button onclick="()">Tucker Connections Gone</button>  
- <button onclick="()">Carisi Connections Gone</button> 
- <button onclick="()">Garland Connections Gone</button>
+ <button onclick="nobeckconnect()">Beck Connections Gone</button> 
+ <button onclick="nolakeconnect()">Lake Connections Gone</button>
+ <button onclick="noamaroconnect()">Amaro Connections Gone</button> 
+ <button onclick="nomurphyconnect()">Murphy Connections Gone</button> 
+ <button onclick="nomdoddsconnect()">MDodds Connections Gone</button> 
+ <button onclick="nokatconnect()">Kat Connections Gone</button>  
+ <button onclick="notuckerconnect()">Tucker Connections Gone</button> 
+ <button onclick="nowdoddsconnect()">WDodds Connections Gone</button> 
+ <button onclick="nocarisiconnect()">Carisi Connections Gone</button> 
+ <button onclick="nogarlandconnect()">Garland Connections Gone</button>
   </div>
 <script type="text/javascript">
+
+//away goes the lines 
 function nobensonconnect() {
 	bensonconnect.style.opacity = "0";
 };
@@ -820,6 +861,46 @@ function nocassidyconnect() {
 
 function nojeffriesconnect() {
 	jeffriesconnect.style.opacity = "0";
+};
+
+function nobeckconnect() {
+	daniconnect.style.opacity = "0";
+};
+
+function nolakeconnect() {
+	lakeconnect.style.opacity = "0";
+};
+
+function noamaroconnect() {
+  nickconnect.style.opacity = "0";
+};
+
+function nomurphyconnect() {
+  murphyconnect.style.opacity = "0";
+};
+
+function nomdoddsconnect() {
+  mdoddsconnect.style.opacity = "0";
+};
+
+function nokatconnect() {
+	katconnect.style.opacity = "0";
+};
+
+function notuckerconnect() {
+	tuckerconnect.style.opacity = "0";
+};
+
+function nowdoddsconnect() {
+	wdoddsconnect.style.opacity = "0";
+};
+
+function nocarisiconnect() {
+	carisiconnect.style.opacity = "0";
+};
+
+function nogarlandconnect() {
+	garlandconnect.style.opacity = "0";
 };
 	
 </script>
