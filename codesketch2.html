@@ -6,9 +6,13 @@
 	<style type="text/css">
 
 
-#button1 {
+#infobutton {
   top: 5px;
   margin: 10px;
+  width: 160px;
+  height: 20px;
+  background-color: blue; 
+  color: black;
 }
 
 #key {
@@ -265,6 +269,18 @@
  		<p id="start2">Click anybody to get started</p>
  	</div>
  	<div class="blackbox" id="black"></div>
+ 	 	<div class="info" id="infostuff">
+ 			<h1>Instuctions</h1>
+ 			<p>1. Click Any Person to get started</p>
+ 			<p>2. Once you have read their information click their image again to see their connections more clearly</p>
+ 			<p>3. Keep doing this until you have read all of them. You can go in an order and repeat as many as you want</p>
+ 			<p>4. To get rid of any of there connectiosn to see soemone elses more clearly click the bottons on the side bar</p>
+ 			<p>5. If you want any more information feel free to reach out to me: Cooper Hartog</p>
+ 			<p>This website was made from janaruary 2021 to march 19th 2021 so all information is from that point and is subject to change.</p>
+ 	</div>
+
+
+
  		<div class="info" id="bensoninfo">
  			<h1>Captian Oliva Benson</h1>
  			<p>Benson is the main character played by actor Mariska Hargitay. She is the only cast member who has been there since season one. Starting the shows with the dynamic duo of Stabler and Benson as the main detectives she continued her way up the ranks after her 12 season long partner left. He partners include famous stabler, Finn, Rollins, and Amaro. In season 21 she finally makes it to captain. Her romantic partners include Tucker, and Cassidy who were police an others who were not. In season 15 she is kidnapped and held against her will by rape suspect William Lewis for 3 days. That story line is a major one in her charter development along with her sexual assault story line in season 9's episode “Undercover”. One of the reason she works SVU is because she is the products of her drunk of a mothers rape. In later season she finds her half brother but he is an addict and only causes trouble until he get cleanw and then dies of an acidental overdose. She also adopted Noah Porter Benson is Season 16. With SVU on its 22 season, it is not only the longest running tv drama but she is the longest running tv drama character in the history of television!</p>
@@ -407,6 +423,8 @@
         var body = document.getElementById("body");
         var starting = document.getElementById("start"); 
         var start = document.getElementById("black");
+        // var infostuff1 = document.getElementById("infostuff");
+        // var instuctions = document.getElementById("button1");
 
 		var benson1 = document.getElementById("benson");
 		var olivasongs = document.getElementById("olivamusic");
@@ -536,6 +554,8 @@ var toggle = function (a, b) {
         return (togg = !togg) ? a() : b();
     };
 };
+
+
 
 
 
@@ -799,7 +819,10 @@ garland1.addEventListener("click", toggle(function(){
 <!-- the key and buttons -->
 </center>
  <div id="key">
- 	<button id="button1" onclick="instructions()">Click for Instructions</button>
+
+ <div id="infobutton">Click for Instructions</div>
+
+
  	<h2>Green is for If they were Partners</h2>
  	<h3>Blue is for if they are blood related</h3>
  	<h4>Red if they ever dataed or kissed</h4>
@@ -830,6 +853,19 @@ garland1.addEventListener("click", toggle(function(){
  <button onclick="nogarlandconnect()">Garland Connections Gone</button>
   </div>
 <script type="text/javascript">
+var infostuff1 = document.getElementById("infostuff");
+var infobutton1 = document.getElementById("infobutton")
+
+infobutton1.addEventListener("click", toggle(function(){
+	console.log("info now");
+	infostuff1.style.opacity = "1";
+	infobutton1.innerHTML = "Click Again to get rid";
+}, function() {
+	console.log(" info gone");
+	infostuff1.style.opacity = "0";
+	infobutton1.innerHTML = "Click for Instructions";
+} ));
+
 
 //away goes the lines 
 function nobensonconnect() {
