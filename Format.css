@@ -73,6 +73,7 @@ p{
   text-align: center;
 
 }
+
 #projectlinkdiv {
   font-size: 40px;
   color: black;
@@ -98,7 +99,6 @@ p{
  color: blue;
 }
 #projectlinkdiv:hover {
- color: blue;
 background-color: rgba(252, 186, 3, 0.5);
 }
 
