@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+    #picture {
+        width: 500px;
+        height: 500px;
+       /*background-color: lightblue; */
+       background-image: url(dolls.jpeg);
+        background-repeat: no-repeat; 
+        background-size: contain;
+    }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>My favorite SVU episodes</h1>
+        <div id="picture">Dolls Season 4 Episdoe 6</div>
+        <script type="text/javascript">
+        var episodes = ["url(dolls.jpeg)", "url(scavenger.jpeg)", "url(poisoned.jpeg)", "url(zebra.jpeg)", "url(Haunted.jpeg)", "url(wildlife.jpeg)", "url(identity.jpeg)"];
+
+        var box = document.getElementById('picture');
+
+
+
+        box.addEventListener("click", function() {
+            var random = Math.floor(7*Math.random());
+
+            console.log(episodes[random])
+
+            box.style.backgroundImage = episodes[random];
+        });
+        </script>
+    </center>
+</body>
+
+</html>
