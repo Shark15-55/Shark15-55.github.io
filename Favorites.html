@@ -4,36 +4,101 @@
     <title></title>
     <style type="text/css">
     #picture {
-        width: 500px;
-        height: 500px;
-       /*background-color: lightblue; */
+
        background-image: url(dolls.jpeg);
         background-repeat: no-repeat; 
         background-size: contain;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        left: 25%;
+        right: 25%;
+        top: 10%;
+        height: 50%;
+        width: 50%;
+    
     }
+
+    #header {
+        width: 100%;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        height: 10%;
+        z-index: -2;
+        background-color: blue;
+        text-align: center; 
+    }
+
+    a {
+    left: 15%;
+    position: fixed;
+    top: 25px;
+}
+#hello{
+        width:50%;
+        height:100px;
+        position:relative;
+        top:20%;
+         left: 25%;
+        right: 25%;
+        font-size: 60px;
+        text-align: center;
+}
+
+#body {
+ margin: 0;
+ padding: 0;
+ background-color: red;
+
+}
     </style>
+
 </head>
 
-<body>
+<body id="body">
     <center>
-        <h1>My favorite SVU episodes</h1>
-        <div id="picture">Dolls Season 4 Episdoe 6</div>
+<div id="header">
+    <h1>My favorite SVU episodes</h1>
+    <a href="index.html">
+        Click to go Home
+    </a>
+
+</div>
+</center>
+        <div id="picture"></div>
+        <div id="hello"> CLick The Photo To get Started</div>
         <script type="text/javascript">
         var episodes = ["url(dolls.jpeg)", "url(scavenger.jpeg)", "url(poisoned.jpeg)", "url(zebra.jpeg)", "url(Haunted.jpeg)", "url(wildlife.jpeg)", "url(identity.jpeg)"];
+        var words = ["Season 4 Episode 7 Dolls", "Season 6 Episode 4 Scavenger", "Season 14 Episode 22 Poisoned Motive", "Season 10 Episode 22 Zebras", "Season 6 Episode10 Haunted", "Season 10 Epsiode 7 Wildlife", "Season 6 Episode 12 Identity"];
 
         var box = document.getElementById('picture');
 
+        function randomNumber() {
+        return Math.floor(Math.random() * 7);
+
+    }
 
 
         box.addEventListener("click", function() {
-            var random = Math.floor(7*Math.random());
+            var x = randomNumber();
+            console.log(x);
+            hello.innerText = words[x];
+            picture.style.backgroundImage = episodes[x];
 
-            console.log(episodes[random])
+        })
 
-            box.style.backgroundImage = episodes[random];
-        });
+
+
+        // box.addEventListener("click", function() {
+        //     var random = Math.floor(7*Math.random());
+
+        //     console.log(episodes[random])
+
+        //     box.style.backgroundImage = episodes[random];
+        // });
         </script>
-    </center>
+
 </body>
 
 </html>
